@@ -13,7 +13,7 @@ function App() {
 
   const URL_MOCKAPI = "https://6a184e6e1878294b597cd59c.mockapi.io/usuarios";
 
-  # FUNCIÓN PARA TRAER TODOS LOS USUARIOS DESDE LA BD
+  // FUNCIÓN PARA TRAER TODOS LOS USUARIOS DESDE LA BD
   const obtenerUsuarios = async () => {
     try {
       const response = await fetch(URL_MOCKAPI);
@@ -54,7 +54,7 @@ function App() {
     }
   };
 
-  # 1. CREAR UN NUEVO USUARIO (MÉTODO POST)
+  // 1. CREAR UN NUEVO USUARIO (MÉTODO POST)
   const handleCrearUsuario = async (e) => {
     e.preventDefault();
     try {
@@ -74,7 +74,7 @@ function App() {
     }
   };
 
-  # 2. ELIMINAR UN USUARIO (MÉTODO DELETE)
+  // 2. ELIMINAR UN USUARIO (MÉTODO DELETE)
   const handleEliminarUsuario = async (id) => {
     try {
       const response = await fetch(`${URL_MOCKAPI}/${id}`, {
